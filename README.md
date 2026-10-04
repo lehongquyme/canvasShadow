@@ -4,7 +4,7 @@ Thư viện Android vẽ shadow bằng `Canvas`, hỗ trợ màu theo state, c�
 
 ## Cài từ JitPack
 
-Đổi `your-github-username` trong `gradle.properties`, push repository lên GitHub và tạo tag (ví dụ `1.0.0`). Thêm JitPack vào project sử dụng:
+Push repository lên GitHub và tạo tag phát hành (ví dụ `v1.0.1`). Thêm JitPack vào project sử dụng:
 
 ```kotlin
 dependencyResolutionManagement {
@@ -18,7 +18,7 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.github.YOUR_GITHUB_USERNAME:YOUR_REPOSITORY:1.0.0")
+    implementation("com.github.lehongquyme:canvasShadow:v1.0.1")
 }
 ```
 
@@ -65,8 +65,8 @@ shadowLayout.setShadowColor(Color.RED)
 ## Publish
 
 ```bash
-git tag 1.0.0
-git push origin 1.0.0
+git tag v1.0.1
+git push origin v1.0.1
 ```
 
-Mở `https://jitpack.io/#YOUR_GITHUB_USERNAME/YOUR_REPOSITORY/1.0.0` và bấm **Get it**.
+Mở `https://jitpack.io/#lehongquyme/canvasShadow/v1.0.1` và bấm **Get it**.

@@ -34,8 +34,10 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
                 groupId = providers.gradleProperty("GROUP").get()
-                artifactId = "canvas-shadow"
-                version = providers.gradleProperty("VERSION_NAME").get()
+                artifactId = "canvasShadow"
+                // JitPack supplies VERSION from the requested Git tag/commit.
+                version = System.getenv("VERSION")
+                    ?: providers.gradleProperty("VERSION_NAME").get()
             }
         }
     }
