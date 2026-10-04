@@ -1,0 +1,16 @@
+<resources>
+    <declare-styleable name="ShadowLayout">
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowAlpha" format="float" />
+        <attr name="shadowBlur" format="dimension" />
+        <attr name="shadowOffsetX" format="dimension" />
+        <attr name="shadowOffsetY" format="dimension" />
+        <attr name="shadowCornerRadius" format="dimension" />
+        <attr name="shadowSpread" format="dimension" />
+        <attr name="shadowMode">
+            <enum name="outer" value="0" />
+            <enum name="inner" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
